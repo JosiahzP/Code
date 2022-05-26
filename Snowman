@@ -1,0 +1,28 @@
+#include <chplot.h>
+CPlot plot;
+
+plot.backgroundColor("#33ffff");
+plot.fillColor("white");
+plot.strokeColor("black");
+plot.ellipse(6, -6, 15, 15, 0);
+plot.ellipse(6, 4, 12, 12, 0);
+plot.ellipse(6, 13, 10, 10, 0);
+plot.fillColor("black");
+plot.ellipse(6, 1, 1, 1, 0);
+plot.ellipse(6, 4, 1, 1, 0);
+plot.ellipse(6, 7, 1, 1, 0);
+plot.ellipse(4, 13, 1, 1, 0);
+plot.ellipse(8, 13, 1, 1, 0);
+plot.fillColor("orange");
+plot.triangle(6, 10, 13, 11, 6, 12);
+plot.fillColor("#663300");
+plot.arrow(11, 4, 21, 4);
+plot.line(1, 4, -11, 4);
+
+plot.axisRange(PLOT_AXIS_XY, -24, 48);
+plot.ticsRange(PLOT_AXIS_XY, 2);
+plot.label(PLOT_AXIS_X, "in");
+plot.label(PLOT_AXIS_Y, "in");
+plot.sizeRatio(1);
+plot.grid(PLOT_OFF);
+plot.plotting();
