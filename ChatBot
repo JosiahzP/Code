@@ -1,0 +1,36 @@
+q = input("What is your first name? ")
+
+w = input("What is your last name? ")
+
+print("Hi there, " + q +" " + w +", nice to meet you!\n")
+
+e = int(input("On a scale from 1 - 10 how is your day? "))
+if (e < 5):
+    print("Sorry to hear that.")
+elif(e >= 6):
+    print("thats good to hear.\n")
+else:
+    print("Interesting.\n")
+r = int(input("How old will you be turning next year? "))
+if(r >= 15):
+    print("Wow ur almost an adult.\n")
+elif(r <= 12):
+    print("Wow your almost a teen.\n")
+elif(r == 13 or r == 14):
+    print("So you just turned into a teenager.\n")
+else:
+    print("Thats an odd age.")
+
+t = input("Think of a number from 1-10, type done when done ") 
+
+import random
+
+die1 = random.randint(1, 10)
+
+print(die1)
+
+y = input("Did you think of this number, type yes or no. ")
+if(y == "yes" or y == "Yes"):
+    print("Yeah i knew that. ")
+    elif(y == "no" or y == "No"):
+    print("I was probably close though.")
