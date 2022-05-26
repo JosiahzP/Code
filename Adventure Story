@@ -1,0 +1,130 @@
+string_t name1, name2, introchoice, option1, option2, option3, end1, end2, end3, end4, end5, end6, end7, end8, end9;
+
+
+int x=randint(1, 7);
+int y=randint(2000, 5000);
+printf("type a name.\n");
+scanf("%s", &name1);
+
+printf("please enter another name.\n");
+scanf("%s", &name2);
+void intro(){
+    printf(name1, " decided to go on a road trip to visit ", name2, " for a weekend.\n But first ", name1, " thinks they should get a gift.\n " ,name1, " has known " , name2, " for 10 years so they want to get something special.\n ", name2, " has been playing tennis for 5 years. What gift should they get?\nA. A tennis ball\nB. A lava lamp\nC. A broom\n");
+    scanf("%s", &introchoice);
+    while(introchoice != "A"  && introchoice != "B" && introchoice != "C"){
+        printf("im sorry, that is not a choice. \n choose a number for what I should do. \nA. Tennis ball\nB. A lava lamp\nC. A broom\n");
+        scanf("%s", &introchoice);
+    }
+    
+}
+
+
+void option1f(){
+    printf("You got the ball now and decide to head out. " ,name1, " brings their dog because they don't want them at home alone.\n It only takes ", x, " hours to get there but they dont want the dog to be bored so they get something.\n They drive into petco and walk through the isles and have a few choices. But ",name1, " also want's to save money. \nA. Just give the dog the tennis ball they got ",name2, "\nB. a treat\nC. a bone\n");
+    scanf("%s", &option1);
+    while(option1 !="A" && option1 !="B" && option1 != "C"){
+        printf("im sorry, that is not a choice. \n choose a capitol Letter for what I should do. \nA. Just give the dog the tennis ball they got ",name2, "\nB. a treat\nC. a bone\n");
+        scanf("%s", &option1);
+    }
+}
+
+void end1f(){
+    printf("The dog loved the ball and is tired enough to sleep through the whole drive. ",name1," still has $", y, " left. Theres only 30 minutes until they get to the house. only 10 more minutes and ", name2 , " calls ", name1, " and ask if theyre almost there. They arrive at the house and ", name1, " says sorry for not getting a gift but ", name2, " shrugs it off and says they are glad they brought a dog."); 
+    
+}
+
+void end2f(){
+    printf("The dog enjoys the treat and eats it in the back. It sees the ball but doesn't do anything. ", name1, " has $",y, "left for the ride and has to stop for gas real quick. ",name1, "gets some snacks fills the gas tanks and heads to the house. They got to the house and ",name2,"opens the door they admire the ball for a little and decide to go play fetch with the dog."); 
+    
+}
+
+void end3f(){
+    printf(name1, " got the dog a bone and it really enjoys it. In fact its able to finish it throughout the car ride. ",name1, " still has $" ,y, " and is able to buy snacks with it.",name2, " calls up ",name1, " and ask if they brought any food. ",name1, "says open the door and find out. so they ended up enjoying a movie and playing with the dog. "); 
+    
+}
+void option2f(){
+    printf(name1," got ",name2, " a lava lamp and decides to head out. The trip is gonna be ", x, " hours long. ", name1, " gets some waters from the house real quick then goes along the journy. Along of the side of the road you see a homeless person and theyre asking for anything. ", name1, "is thinking and decides on 3 options.   \nA. Give them some water.\nB. Give them money.\nC. or just drive away.\n");
+    scanf("%s", &option2);
+    while(option2 !="A" && option2 !="B" && option2 != "C"){
+        printf("im sorry, that is not a choice. \n choose a capitol Letter for what I should do. \nA. Give them some water.\nB. Give them money.\nC. or just drive away.\n");
+        scanf("%s", &option2);
+    }
+}
+
+void end4f(){
+    printf(name1, " gives the homeless person some water. The homeless person is so thankful they insist on you taking their tennis racquet. ",name1, " thanks the homeless person and continues on their way. they have to stop for gas station to buy some chips. ", name1, "has $",y," to spare and is only 10 minutes away from the house. they drive up to the door, knocks on it and ",name2, " opens it. They greet eachother and exchange gifts, ",name2, " see's the tennis racquet and decides they need to take a match outside.");
+}
+
+void end5f(){
+    printf(name1, " gives the homeless person some money as they have $",y, ". The homeless person turns out to be a really rich person doing a test of whos a good person. ",name1, " happened to be the first person to give them money so they were praised for a little bit. the homeless person ended up giving ",name1, " $200,000 in card to leave with. ", name1, " was so over whelmed they called ", name2, " and told them theyre going to Japan. They end up buying tickets and become some of the richest people in japan.");
+}
+
+
+
+void end6f(){
+    printf(name1, " Decides to drive away and begins to feel guilty. They start feeling super bad for the homeless person because they have $",y,". But its ok because theyre going to see ", name2, " for a little. Only 5 minutes left until they reach the house and ", name1, " begins to feel the guilt go away and get flushed out with excitement. ", name2, " opens the doors and see's the lava lamp. Turns out they've been wanting one for a while so they end up admiring it for a while.");
+}
+
+
+void option3f(){
+    printf(name1," got ",name2, " a broom from this super sketchy place and is ready for the road trip. Its going to take ",x," hours to get there and ",name1, " feels good. noises start appearing in the car and ", name1, " starts getting scared. They look back and notice the broom isn't where they put it. It could've moved just because of the car stopping but just to be safe they pulled over. They open the door and see the broom sitting there what should ", name1, "do. \nA. Touch the broom.\nB. leave it and keep driving.\nC. or just throw it out.\n");
+    scanf("%s", &option3);
+    while(option3 !="A" && option3 !="B" && option3 != "C"){
+        printf("im sorry, that is not a choice. \n choose a capitol Letter for what I should do. \nA. Touch the broom.\nB. leave it and keep driving.\nC. or just throw it out.\n");
+        scanf("%s", &option3);
+    }
+}
+
+void end7f(){
+    printf(name1, " Decides to touch the broom and to their surprise nothing happened. Dissapointed ", name1, " gets back in the car but something is different. The weight was shifting. ", name1, " looks back in the mirror and see's it flying not knowing what to do they call ", name2, ". ", name1, "hops on broom and starts flying away. The broom goes " ,y,"mph and arrives at ", name2, " house in a second. ");
+}
+
+
+void end8f(){
+    printf(name1, " Decides not to touch the broom and to their surprise nothing happened. Dissapointed ", name1, " gets back in the car but something is strange. The weight was shifting. ", name1, " looks back in the mirror and see's it zooming around not knowing what to do they call ", name2, ". ", name1, "The broom starts pusing the car at really fast speeds. The car goes " ,y,"mph and arrives at ", name2, " house in a second. ");
+}
+
+void end9f(){
+    printf(name1, " Decides to throw the broom and drive away. Dissapointed ", name1, " gets back on the raod but something is different. The weight was shifting. ", name1, " looks back in the mirror and see's it flying behind the car not knowing what to do they call ", name2, ". ", name1, " pushes on the peddle and the broom pushes the car. The car goes " ,y,"mph and arrives at ", name2, " house in a second. ");
+}
+
+
+int main(){
+    intro();  //intro should be 3 ifs
+    if(introchoice == "a"||introchoice == "A"){
+        option1f();
+        if (option1 == "a"||option1 == "A"){
+            end1f();
+        }
+        if(option1 == "b"||option1 == "B"){
+            end2f();
+        }
+        if(option1 == "c"||option1 == "C"){
+            end3f();
+        }    
+    }
+    if(introchoice == "b"||introchoice == "B"){
+        option2f();
+        if (option2 == "a"||option2 == "A"){
+            end4f();
+        }
+        if (option2 == "b"||option2 == "B"){
+            end5f();
+        }
+        if (option2 == "c"||option2 == "C"){
+            end6f();
+        }
+    }    
+    if(introchoice == "c"||introchoice == "C"){
+        option3f();
+        if (option3 == "a"||option3 == "A"){
+            end7f();
+        }
+        if (option3 == "b"||option3 == "B"){
+            end8f();
+        }
+        if (option3 == "c"||option3 == "C"){
+            end9f();
+        }
+    }
+}
