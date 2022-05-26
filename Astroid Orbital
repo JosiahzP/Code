@@ -1,0 +1,21 @@
+#include <linkbot.h>
+CLinkbotI rob1, rob2;
+CLinkbotIGroup group; 
+
+group.addRobot(rob1);
+group.addRobot(rob2);
+rob1.setJointSpeeds(23,NaN,23);
+rob2.setJointSpeed(JOINT3,60);
+group.driveTime(10);
+rob2.setJointSpeeds(100,NaN,50);
+rob1.setJointSpeeds(23,NaN,23);
+group.driveTime(8);
+rob2.setJointSpeeds(50,NaN,45);
+rob1.setJointSpeeds(23,NaN,23);
+group.driveTime(14);
+rob2.setJointSpeeds(50,NaN,50);
+rob1.setJointSpeeds(23,NaN,23);
+group.driveTime(20);
+
+
+
